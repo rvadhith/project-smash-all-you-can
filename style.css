@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header  */
+header {
+    background: black;
+    color: cornsilk;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+}
+/* Time section */
+#time-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Score section */
+#score-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Game segment */
+#game-area {
+    background-image: url("./assets/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border: 5px solid black;
+    cursor: crosshair;
+    position: relative;
+}
+
+.insects {
+    height: 75px;
+    width: 75px;
+    cursor: crosshair;
+}
+/* Images section */
+#cockroach-1{
+    position: relative;
+    animation-name: cockroach-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#beetle-1{
+    position: relative;
+    animation-name: beetle-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#ant-1{
+    position: relative;
+    animation-name: ant-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Key frame animation of insects */
+@keyframes cockroach-1 {
+    from {
+        top: 0;
+        left: 0;
+    }
+    
+    25% {
+        top: 300px;
+        left: 300px;
+    }
+
+    50%{
+        top: 0;
+        left: 600px;
+    }
+
+    75% {
+        top: 300px;
+        left: 300px;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes beetle-1 {
+    from {
+        top: 300px;
+        left: 0;
+    }
+    
+    25% {
+        top: 100px;
+        left: 400px;
+    }
+
+    50%{
+        top: 100px;
+        left: 300px;
+    }
+
+    75% {
+        top: 100px;
+        left: 400px;
+    }
+
+    100%{
+        top: 300px;
+        left: 0;
+    }
+}
+
+@keyframes ant-1 {
+    from {
+        top: 100px;
+        left: 0;
+    }
+    
+    25% {
+        top: 300px;
+        left: 300px;
+    }
+
+    50%{
+        top: 100px;
+        left: 300px;
+    }
+
+    75% {
+        top: 300px;
+        left: 400px;
+    }
+
+    100%{
+        top: 100px;
+        left: 0;
+    }
+}
+/* End screen section */
+#end-screen{
+    height: 300px;
+    background: black;
+    color: cornsilk;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+a{
+    text-decoration: none;
+    background: cornsilk;
+    color: black;    
+}
+a:hover{
+    color:  cornsilk;
+    background:  black;    
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: cornsilk;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}

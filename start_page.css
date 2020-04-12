@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: cornsilk;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+
+h1{
+    font-size: 100px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+a{
+    background:cornsilk;
+    color: black;
+    text-align: center;
+    text-decoration: none;    
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+a:hover {
+    background:black;
+    color: cornsilk;
+}
+
+
